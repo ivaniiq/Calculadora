@@ -55,11 +55,11 @@
             this.textBox1.BackColor = System.Drawing.SystemColors.ControlText;
             this.textBox1.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.textBox1.Location = new System.Drawing.Point(15, 32);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(8);
             this.textBox1.MaximumSize = new System.Drawing.Size(377, 61);
             this.textBox1.MinimumSize = new System.Drawing.Size(377, 61);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(377, 27);
+            this.textBox1.Size = new System.Drawing.Size(377, 61);
             this.textBox1.TabIndex = 0;
             // 
             // operationsGroupBox
@@ -70,9 +70,9 @@
             this.operationsGroupBox.Controls.Add(this.minusButton);
             this.operationsGroupBox.Controls.Add(this.plusButton);
             this.operationsGroupBox.Location = new System.Drawing.Point(240, 100);
-            this.operationsGroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.operationsGroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.operationsGroupBox.Name = "operationsGroupBox";
-            this.operationsGroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.operationsGroupBox.Padding = new System.Windows.Forms.Padding(2);
             this.operationsGroupBox.Size = new System.Drawing.Size(152, 219);
             this.operationsGroupBox.TabIndex = 1;
             this.operationsGroupBox.TabStop = false;
@@ -84,7 +84,7 @@
             this.sameButton.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.sameButton.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.sameButton.Location = new System.Drawing.Point(5, 155);
-            this.sameButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sameButton.Margin = new System.Windows.Forms.Padding(2);
             this.sameButton.Name = "sameButton";
             this.sameButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.sameButton.Size = new System.Drawing.Size(138, 51);
@@ -98,12 +98,13 @@
             this.splitButton.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.splitButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.splitButton.Location = new System.Drawing.Point(76, 94);
-            this.splitButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.splitButton.Margin = new System.Windows.Forms.Padding(2);
             this.splitButton.Name = "splitButton";
             this.splitButton.Size = new System.Drawing.Size(66, 51);
             this.splitButton.TabIndex = 15;
             this.splitButton.Text = "/";
             this.splitButton.UseVisualStyleBackColor = false;
+            this.splitButton.Click += new System.EventHandler(this.splitButton_Click);
             // 
             // multiplyButton
             // 
@@ -111,12 +112,13 @@
             this.multiplyButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.multiplyButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.multiplyButton.Location = new System.Drawing.Point(5, 94);
-            this.multiplyButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.multiplyButton.Margin = new System.Windows.Forms.Padding(2);
             this.multiplyButton.Name = "multiplyButton";
             this.multiplyButton.Size = new System.Drawing.Size(66, 51);
             this.multiplyButton.TabIndex = 14;
             this.multiplyButton.Text = "x";
             this.multiplyButton.UseVisualStyleBackColor = false;
+            this.multiplyButton.Click += new System.EventHandler(this.multiplyButton_Click);
             // 
             // minusButton
             // 
@@ -124,12 +126,13 @@
             this.minusButton.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.minusButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.minusButton.Location = new System.Drawing.Point(76, 32);
-            this.minusButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.minusButton.Margin = new System.Windows.Forms.Padding(2);
             this.minusButton.Name = "minusButton";
             this.minusButton.Size = new System.Drawing.Size(66, 51);
             this.minusButton.TabIndex = 13;
             this.minusButton.Text = "-";
             this.minusButton.UseVisualStyleBackColor = false;
+            this.minusButton.Click += new System.EventHandler(this.minusButton_Click);
             // 
             // plusButton
             // 
@@ -137,17 +140,18 @@
             this.plusButton.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.plusButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.plusButton.Location = new System.Drawing.Point(5, 32);
-            this.plusButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.plusButton.Margin = new System.Windows.Forms.Padding(2);
             this.plusButton.Name = "plusButton";
             this.plusButton.Size = new System.Drawing.Size(66, 51);
             this.plusButton.TabIndex = 12;
             this.plusButton.Text = "+";
             this.plusButton.UseVisualStyleBackColor = false;
+            this.plusButton.Click += new System.EventHandler(this.plusButton_Click);
             // 
             // oneButton
             // 
             this.oneButton.Location = new System.Drawing.Point(15, 100);
-            this.oneButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.oneButton.Margin = new System.Windows.Forms.Padding(2);
             this.oneButton.Name = "oneButton";
             this.oneButton.Size = new System.Drawing.Size(66, 51);
             this.oneButton.TabIndex = 2;
@@ -158,7 +162,7 @@
             // twoButton
             // 
             this.twoButton.Location = new System.Drawing.Point(86, 100);
-            this.twoButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.twoButton.Margin = new System.Windows.Forms.Padding(2);
             this.twoButton.Name = "twoButton";
             this.twoButton.Size = new System.Drawing.Size(66, 51);
             this.twoButton.TabIndex = 3;
@@ -168,7 +172,7 @@
             // threeButton
             // 
             this.threeButton.Location = new System.Drawing.Point(158, 100);
-            this.threeButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.threeButton.Margin = new System.Windows.Forms.Padding(2);
             this.threeButton.Name = "threeButton";
             this.threeButton.Size = new System.Drawing.Size(66, 51);
             this.threeButton.TabIndex = 4;
@@ -178,7 +182,7 @@
             // sixButton
             // 
             this.sixButton.Location = new System.Drawing.Point(158, 156);
-            this.sixButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sixButton.Margin = new System.Windows.Forms.Padding(2);
             this.sixButton.Name = "sixButton";
             this.sixButton.Size = new System.Drawing.Size(66, 51);
             this.sixButton.TabIndex = 7;
@@ -188,7 +192,7 @@
             // fiveButton
             // 
             this.fiveButton.Location = new System.Drawing.Point(86, 156);
-            this.fiveButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.fiveButton.Margin = new System.Windows.Forms.Padding(2);
             this.fiveButton.Name = "fiveButton";
             this.fiveButton.Size = new System.Drawing.Size(66, 51);
             this.fiveButton.TabIndex = 6;
@@ -198,7 +202,7 @@
             // fourButton
             // 
             this.fourButton.Location = new System.Drawing.Point(15, 156);
-            this.fourButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.fourButton.Margin = new System.Windows.Forms.Padding(2);
             this.fourButton.Name = "fourButton";
             this.fourButton.Size = new System.Drawing.Size(66, 51);
             this.fourButton.TabIndex = 5;
@@ -208,7 +212,7 @@
             // pointButton
             // 
             this.pointButton.Location = new System.Drawing.Point(158, 268);
-            this.pointButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pointButton.Margin = new System.Windows.Forms.Padding(2);
             this.pointButton.Name = "pointButton";
             this.pointButton.Size = new System.Drawing.Size(66, 51);
             this.pointButton.TabIndex = 13;
@@ -218,7 +222,7 @@
             // zeroButton
             // 
             this.zeroButton.Location = new System.Drawing.Point(86, 268);
-            this.zeroButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.zeroButton.Margin = new System.Windows.Forms.Padding(2);
             this.zeroButton.Name = "zeroButton";
             this.zeroButton.Size = new System.Drawing.Size(66, 51);
             this.zeroButton.TabIndex = 12;
@@ -228,7 +232,7 @@
             // signButton
             // 
             this.signButton.Location = new System.Drawing.Point(15, 268);
-            this.signButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.signButton.Margin = new System.Windows.Forms.Padding(2);
             this.signButton.Name = "signButton";
             this.signButton.Size = new System.Drawing.Size(66, 51);
             this.signButton.TabIndex = 11;
@@ -238,7 +242,7 @@
             // nineButton
             // 
             this.nineButton.Location = new System.Drawing.Point(158, 212);
-            this.nineButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nineButton.Margin = new System.Windows.Forms.Padding(2);
             this.nineButton.Name = "nineButton";
             this.nineButton.Size = new System.Drawing.Size(66, 51);
             this.nineButton.TabIndex = 10;
@@ -248,7 +252,7 @@
             // eightButton
             // 
             this.eightButton.Location = new System.Drawing.Point(86, 212);
-            this.eightButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.eightButton.Margin = new System.Windows.Forms.Padding(2);
             this.eightButton.Name = "eightButton";
             this.eightButton.Size = new System.Drawing.Size(66, 51);
             this.eightButton.TabIndex = 9;
@@ -258,7 +262,7 @@
             // sevenButton
             // 
             this.sevenButton.Location = new System.Drawing.Point(15, 212);
-            this.sevenButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sevenButton.Margin = new System.Windows.Forms.Padding(2);
             this.sevenButton.Name = "sevenButton";
             this.sevenButton.Size = new System.Drawing.Size(66, 51);
             this.sevenButton.TabIndex = 8;
@@ -284,7 +288,7 @@
             this.Controls.Add(this.oneButton);
             this.Controls.Add(this.operationsGroupBox);
             this.Controls.Add(this.textBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "d";
             this.operationsGroupBox.ResumeLayout(false);

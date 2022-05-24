@@ -28,5 +28,32 @@ namespace Calculadora
         {
 
         }
+
+        private void plusButton_Click(object sender, EventArgs e)
+        {
+            operacion = "+";
+            textBox1.Text += " + ";
+        }
+
+        private void minusButton_Click(object sender, EventArgs e)
+        {
+            operacion = "-";
+            textBox1.Text += " - ";
+
+        }
+
+        private void multiplyButton_Click(object sender, EventArgs e)
+        {
+            operacion = "*";
+            textBox1.Text += " * ";
+
+        }
+
+        private void splitButton_Click(object sender, EventArgs e)
+        {
+            operacion = "/";
+            textBox1.Text += " / ";
+
+        }
     }
 }
