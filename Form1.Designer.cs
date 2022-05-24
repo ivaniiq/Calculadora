@@ -91,6 +91,7 @@
             this.sameButton.TabIndex = 16;
             this.sameButton.Text = "=";
             this.sameButton.UseVisualStyleBackColor = false;
+            this.sameButton.Click += new System.EventHandler(this.sameButton_Click);
             // 
             // splitButton
             // 

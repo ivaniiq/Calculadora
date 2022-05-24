@@ -176,5 +176,16 @@ namespace Calculadora
             textBox1.Text += " / ";
 
         }
+
+        private void sameButton_Click(object sender, EventArgs e)
+        {
+            double total;
+            char[] contentBox = textBox1.Text.ToCharArray();
+            for (int i=0; i < contentBox.Length; i++)
+            {
+                
+            }
+
+        }
     }
 }
